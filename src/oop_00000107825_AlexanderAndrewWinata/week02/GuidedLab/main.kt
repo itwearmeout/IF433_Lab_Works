@@ -1,5 +1,6 @@
-package oop_00000107825_AlexanderAndrewWinata.week02
+package oop_00000107825_AlexanderAndrewWinata.week02.GuidedLab
 
+import oop_00000107825_AlexanderAndrewWinata.week02.GuidedLab.Student
 import java.util.Scanner
 
 fun main(){
