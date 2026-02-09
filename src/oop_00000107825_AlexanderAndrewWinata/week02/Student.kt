@@ -13,4 +13,7 @@ class Student (
             println("LOG: objek student $name berhasil dialokasikan ke memory")
         }
     }
+    constructor(name: String, nim: String) :this(name, nim, "Non-Matriculated"){
+        println("LOG: Menggunakan constructor jalur umum (Tanpa jurusan)")
+    }
 }
