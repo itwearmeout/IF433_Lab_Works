@@ -26,10 +26,10 @@ fun main() {
         when(input){
             1 -> {
                 enemyHp -= Hero.baseDamage
-                println("Menyerang musuh dengan ${Hero.baseDamage}, sisah darah musuh: ${enemyHp}")
+                Hero.attack("Enemy")
                 if(enemyHp > 0) {
                     val enemyAttack = (10..20).random()
-                    Hero.hp -= enemyAttack
+                    Hero.takeDamage(enemyAttack)
                     println("Musuh menyerang ${Hero.hp} sebesar ${enemyAttack}, sisa darah ${Hero.name}: ${Hero.hp}")
                 }
             }
