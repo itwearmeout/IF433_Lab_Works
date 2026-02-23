@@ -5,7 +5,11 @@ class Employee(
 ) {
     var salary: Int = 0
         set (value) {
-            println("Mencoba set gaji ke: $value")
-            this.salary = value
+            if(value < 0) {
+                println("Gaji tidak boleh negatif")
+                field = 0
+            }else{
+                field = value
+            }
         }
 }
