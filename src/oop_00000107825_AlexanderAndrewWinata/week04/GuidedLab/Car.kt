@@ -12,4 +12,9 @@ open class Car(
     override fun honk() {
         println("TIN TIN! Mobil $brand lewat!")
     }
+
+    override fun accelarate() {
+        super.accelarate()
+        println("Mobil $brand menggunakan transmisi gigi untuk menambah kecepatan")
+    }
 }
