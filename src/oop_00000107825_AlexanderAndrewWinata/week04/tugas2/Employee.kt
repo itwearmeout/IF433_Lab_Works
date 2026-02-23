@@ -12,5 +12,5 @@ open class Employee (
         return(baseSalary*0.1).toInt()
     }
 
-    
+
 }
