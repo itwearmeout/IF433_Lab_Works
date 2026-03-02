@@ -11,5 +11,11 @@ fun main () {
 
     for(method in listCard){
         method.processPayment(75000.00)
+        when(method){
+            is EWallet -> {
+                method.topUp(50000.00)
+                method.processPayment(75000.00)
+            }
+        }
     }
 }
