@@ -33,3 +33,6 @@ bin/
 
 .idea/
 *.iml
+
+eval "$(ssh-agent -s)".pub
+eval "$(ssh-agent -s)"
