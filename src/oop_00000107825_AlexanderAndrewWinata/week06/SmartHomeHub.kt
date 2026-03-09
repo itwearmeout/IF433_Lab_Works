@@ -10,5 +10,5 @@ class SmartHomeHub (val devices : MutableList<SmartDevice> = mutableListOf<Smart
                 i.turnOff()
             }
         }
-    }
+    }//.
 }
