@@ -1,6 +1,12 @@
 package oop_00000107825_AlexanderAndrewWinata.week06
 
 interface Clickable {
-    val name: String = "Tombol Rahasia"
+    val name: String
     fun click()
+}
+
+class Button(override  val name: String): Clickable {
+    override fun click() {
+        println("Tombol '$name' berhasil diklik")
+    }
 }
