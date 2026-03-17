@@ -47,4 +47,14 @@ fun main() {
     println("${starter.item.damage}")
     println("${starter.item.rarity}")
     println("${starter.durability}")
+
+    val upgradedItem = starterWeapon.item.copy(
+        name = "Pedang Kayu Modifikasi",
+        damage = 25
+    )
+
+    processEvent(SafeZone)
+    processEvent(MonsterEncounter("Goblin Nakal"))
+    processEvent(LootDropped(upgradedItem))
+    processEvent(GameOver("Terkena jebakan racun"))
 }
