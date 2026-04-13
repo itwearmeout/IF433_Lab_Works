@@ -21,7 +21,7 @@ fun main() {
             } ?: println("Error -> $raw")
 
         } catch (e: IllegalArgumentException) {
-            println("Error parsing data: ${e.message}")
+            println("Error parsing data: ${e.message}") //berhasil amin
         }
     }
 }
